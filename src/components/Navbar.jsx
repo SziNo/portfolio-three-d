@@ -59,9 +59,14 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {
+                setActive(nav.title)
+                document
+                  .querySelector(`#${nav.id}`)
+                  .scrollIntoView({ behavior: 'smooth' })
+              }}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <Link to={`#${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
         </ul>
@@ -71,7 +76,7 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain cursor-pointer'
-            onClick={() => setToggle(!toggle)}
+            onClick={() => setToggle((prev) => !prev)}
           />
 
           <div
@@ -87,11 +92,14 @@ const Navbar = () => {
                     active === nav.title ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
-                    setToggle(!toggle)
+                    setToggle((prev) => !prev)
                     setActive(nav.title)
+                    document
+                      .querySelector(`#${nav.id}`)
+                      .scrollIntoView({ behavior: 'smooth' })
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <Link to={`#${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
