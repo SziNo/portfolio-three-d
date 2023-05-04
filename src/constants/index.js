@@ -176,7 +176,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/helpdesk-mern-app',
+    github_link: 'https://github.com/SziNo/helpdesk-mern-app',
+    demo_link: 'https://helpdesk-mern.onrender.com/',
   },
   {
     name: 'Shirtify',
@@ -201,7 +202,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/Shirtify/tree/master/client',
+    github_link: 'https://github.com/SziNo/Shirtify/tree/master/client',
+    demo_link: 'https://shirtify.vercel.app/',
   },
   {
     name: 'Sumz',
@@ -222,7 +224,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/gpt-4-summarizer',
+    github_link: 'https://github.com/SziNo/gpt-4-summarizer',
+    demo_link: 'https://gpt-4-summarizer.vercel.app/',
   },
   {
     name: 'Metaverse',
@@ -243,7 +246,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/metaverse-next13',
+    github_link: 'https://github.com/SziNo/metaverse-next13',
+    demo_link: 'https://metaverse-next13-phi.vercel.app/',
   },
   {
     name: 'Real Estate App',
@@ -264,7 +268,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/realEstateAppWithFirebase',
+    github_link: 'https://github.com/SziNo/realEstateAppWithFirebase',
+    demo_link: 'https://real-estate-app-with-firebase.vercel.app/',
   },
   {
     name: 'HooBank',
@@ -285,7 +290,8 @@ const projects = [
       },
     ],
     image: cover,
-    source_code_link: 'https://github.com/SziNo/hoobank',
+    github_link: 'https://github.com/SziNo/hoobank',
+    demo_link: 'https://hoobank-alpha.vercel.app/',
   },
 ]
 
