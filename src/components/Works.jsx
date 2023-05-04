@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, rocket } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -13,7 +13,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  github_link,
+  demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -32,15 +33,25 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl justify'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-center items-end m-3 gap-4 card-img_hover'>
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+              onClick={() => window.open(github_link, '_blank')}
+              className='black-gradient w-16 h-16 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={github}
                 alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-[100%] h-[100%] object-cover'
+              />
+            </div>
+            <div
+              onClick={() => window.open(demo_link, '_blank')}
+              className='white-gradient w-16 h-16 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={rocket}
+                alt='source code'
+                className='w-[100%] h-[100%] object-cover shadow-lg'
               />
             </div>
           </div>
@@ -81,8 +92,8 @@ const Works = () => {
         >
           The following projects showcase my skills and curiosity in mainly
           frontend technologies. <br className='sm:block hidden' />
-          Each project is briefly described and includes links to the code
-          repository and live demo.
+          Each project is briefly described and includes links to the
+          corresponding GitHub repository and live demo. 🚀
         </motion.p>
       </div>
 
