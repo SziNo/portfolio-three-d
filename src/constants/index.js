@@ -19,6 +19,8 @@ import {
   dh,
   cover,
   threejs,
+  github,
+  linkedin,
 } from '../assets'
 
 export const navLinks = [
@@ -302,12 +304,14 @@ const projects = [
 const socials = [
   {
     name: 'linkedin',
-    url: '/linkedin.svg',
+    url: 'https://www.linkedin.com/in/norbert-szikora-9172b8250/',
+    image: linkedin,
   },
   {
     name: 'github',
-    url: '/github.svg',
+    url: 'https://github.com/SziNo',
+    image: github,
   },
 ]
 
-export { services, technologies, experiences, projects }
+export { services, technologies, experiences, projects, socials }
