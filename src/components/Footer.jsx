@@ -16,7 +16,7 @@ const Footer = () => {
         <h4 className='font-extrabold text-[24px] text-white'>Portfolio</h4>
         <ul className='flex gap-6 list-none'>
           {socials.map((social, idx) => (
-            <li>
+            <li key={idx}>
               <img
                 key={idx}
                 src={social.image}
