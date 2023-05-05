@@ -9,6 +9,7 @@ const Footer = () => {
       variants={footerVariants}
       initial='hidden'
       whileInView='show'
+      viewport={{ once: true, amount: 0 }}
       className={`${styles.paddingX} py-8 relative`}
     >
       <div className='flex items-center justify-between flex-wrap'>

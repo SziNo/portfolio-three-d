@@ -90,7 +90,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 export const footerVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 15,
     transition: {
       type: 'spring',
       stiffness: 300,
@@ -102,8 +102,8 @@ export const footerVariants = {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 80,
-      delay: 0.5,
+      stiffness: 100,
+      delay: 0.25,
     },
   },
 }
