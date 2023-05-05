@@ -299,4 +299,15 @@ const projects = [
   },
 ]
 
+const socials = [
+  {
+    name: 'linkedin',
+    url: '/linkedin.svg',
+  },
+  {
+    name: 'github',
+    url: '/github.svg',
+  },
+]
+
 export { services, technologies, experiences, projects }
