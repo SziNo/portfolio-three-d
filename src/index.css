@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    @apply bg-primary;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +24,6 @@
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
-}
-
-.footer-gradient {
-  position: absolute;
-  width: 500px;
-  height: 50px;
-  left: 57%;
-  bottom: 0;
-
-  background: #65c4fa;
-  filter: blur(150px);
 }
 
 .white-gradient {

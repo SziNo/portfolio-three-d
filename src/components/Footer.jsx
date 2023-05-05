@@ -11,21 +11,21 @@ const Footer = () => {
       whileInView='show'
       className={`${styles.paddingX} py-8 relative`}
     >
-      <div className='footer-gradient' />
-
       <div className='flex items-center justify-between flex-wrap'>
         <h4 className='font-extrabold text-[24px] text-white'>Portfolio</h4>
-        <div className='flex gap-6'>
+        <ul className='flex gap-6 list-none'>
           {socials.map((social, idx) => (
-            <img
-              key={idx}
-              src={social.image}
-              alt={social.name}
-              onClick={() => window.open(social.url, '_blank')}
-              className='w-[35px] h-[35px] object-contain cursor-pointer'
-            />
+            <li>
+              <img
+                key={idx}
+                src={social.image}
+                alt={social.name}
+                onClick={() => window.open(social.url, '_blank')}
+                className='w-[35px] h-[35px] object-contain cursor-pointer'
+              />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </motion.footer>
   )
