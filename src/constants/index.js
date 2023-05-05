@@ -150,7 +150,7 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Nov 2022 - Apr 2023',
     points: [
-      'Developing and debugging mainly using React, Backbone.js, SASS, and other related technologies.',
+      'Developing and debugging mainly using React, Backbone.js, SASS and other related technologies.',
       'Collaborating with cross-functional teams including Designers, Web Content Translators, GA Specialists and Testers.',
       'Implementing responsive design and ensuring cross-browser compatibility, usually using the Xcode simulator for iOS testing.',
       'Participating in code reviews and getting acquainted with JIRA/BitBucket/Confluence.',
