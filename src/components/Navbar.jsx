@@ -25,6 +25,11 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleclick = (nav) => {
+    setActive(nav.title)
+    document.querySelector(`#${nav.id}`).scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <nav
       className={`${
@@ -59,12 +64,7 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => {
-                setActive(nav.title)
-                document
-                  .querySelector(`#${nav.id}`)
-                  .scrollIntoView({ behavior: 'smooth' })
-              }}
+              onClick={() => handleclick(nav)}
             >
               <Link to={`#${nav.id}`}>{nav.title}</Link>
             </li>
@@ -93,10 +93,7 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setToggle((prev) => !prev)
-                    setActive(nav.title)
-                    document
-                      .querySelector(`#${nav.id}`)
-                      .scrollIntoView({ behavior: 'smooth' })
+                    handleclick(nav)
                   }}
                 >
                   <Link to={`#${nav.id}`}>{nav.title}</Link>
