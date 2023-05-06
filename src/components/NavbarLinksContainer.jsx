@@ -2,9 +2,11 @@ import { useState } from 'react'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 import { Link } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 
 const NavbarLinksContainer = ({ active, setActive }) => {
   const [toggle, setToggle] = useState(false)
+  const isDesktop = useMediaQuery({ minWidth: 768 })
 
   const handleclick = (nav) => {
     setActive(nav.title)
@@ -12,16 +14,42 @@ const NavbarLinksContainer = ({ active, setActive }) => {
   }
   return (
     <>
-      <div>
-        <ul className='list-none hidden md:flex flex-row lg:gap-7 md:gap-3'>
+      <div
+        className={`${
+          isDesktop
+            ? ''
+            : `${
+                !toggle ? 'hidden' : 'flex'
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`
+        }`}
+      >
+        <ul
+          className={`list-none ${
+            isDesktop
+              ? 'hidden md:flex flex-row lg:gap-7 md:gap-3'
+              : 'flex justify-end items-start flex-1 flex-col gap-4'
+          }`}
+        >
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } font-medium cursor-pointer hover:text-white ${
+                isDesktop ? 'text-[18px]' : 'font-poppins text-[16px]'
+              }`}
             >
-              <Link to={`#${nav.id}`} onClick={() => handleclick(nav)}>
+              <Link
+                to={`#${nav.id}`}
+                onClick={
+                  isDesktop
+                    ? () => handleclick(nav)
+                    : () => {
+                        setToggle((prev) => !prev)
+                        handleclick(nav)
+                      }
+                }
+              >
                 {nav.title}
               </Link>
             </li>
@@ -36,33 +64,6 @@ const NavbarLinksContainer = ({ active, setActive }) => {
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle((prev) => !prev)}
         />
-
-        <div
-          className={`${
-            !toggle ? 'hidden' : 'flex'
-          } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-        >
-          <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-            {navLinks.map((nav) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? 'text-white' : 'text-secondary'
-                }`}
-              >
-                <Link
-                  to={`#${nav.id}`}
-                  onClick={() => {
-                    setToggle((prev) => !prev)
-                    handleclick(nav)
-                  }}
-                >
-                  {nav.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </>
   )
