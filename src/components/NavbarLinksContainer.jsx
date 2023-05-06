@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,25 @@ import { useMediaQuery } from 'react-responsive'
 
 const NavbarLinksContainer = ({ active, setActive }) => {
   const [toggle, setToggle] = useState(false)
+  const containerRef = useRef(null)
   const isDesktop = useMediaQuery({ minWidth: 768 })
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target) &&
+        !event.target.closest('.hamburger-icon')
+      ) {
+        setToggle(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [])
 
   const handleclick = (nav) => {
     setActive(nav.title)
@@ -15,6 +33,7 @@ const NavbarLinksContainer = ({ active, setActive }) => {
   return (
     <>
       <div
+        ref={containerRef}
         className={`${
           isDesktop
             ? ''
@@ -61,7 +80,7 @@ const NavbarLinksContainer = ({ active, setActive }) => {
         <img
           src={toggle ? close : menu}
           alt='menu'
-          className='w-[28px] h-[28px] object-contain cursor-pointer'
+          className='hamburger-icon w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle((prev) => !prev)}
         />
       </div>
