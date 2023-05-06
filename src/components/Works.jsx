@@ -36,7 +36,7 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-center items-end m-3 gap-4 card-img_hover'>
             <div
               onClick={() => window.open(github_link, '_blank')}
-              className='black-gradient md:w-16 sm:w-14 w-12 md:h-16 sm:h-14 h-12 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient md:w-16 sm:w-14 w-12 md:h-16 sm:h-14 h-12 rounded-full flex justify-center items-center cursor-pointer hover:translate-y-[-5px] transition duration-300'
             >
               <img
                 src={github}
@@ -46,7 +46,7 @@ const ProjectCard = ({
             </div>
             <div
               onClick={() => window.open(demo_link, '_blank')}
-              className='white-gradient md:w-16 sm:w-14 w-12 md:h-16 sm:h-14 h-12 rounded-full flex justify-center items-center cursor-pointer'
+              className='white-gradient md:w-16 sm:w-14 w-12 md:h-16 sm:h-14 h-12 rounded-full flex justify-center items-center cursor-pointer hover:translate-y-[-5px] transition duration-300'
             >
               <img
                 src={rocket}
