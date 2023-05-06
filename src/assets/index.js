@@ -20,6 +20,7 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
+import python from './tech/python.png'
 
 import owl from './company/owl.png'
 import kulkertech from './company/kulkertech.png'
@@ -49,6 +50,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  python,
   dh,
   kulkertech,
   owl,

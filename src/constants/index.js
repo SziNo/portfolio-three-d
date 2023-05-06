@@ -19,6 +19,7 @@ import {
   dh,
   cover,
   threejs,
+  python,
   github,
   linkedin,
 } from '../assets'
@@ -87,7 +88,7 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'next',
+    name: 'Next',
     icon: next,
   },
   {
@@ -105,6 +106,10 @@ const technologies = [
   {
     name: 'MongoDB',
     icon: mongodb,
+  },
+  {
+    name: 'Python',
+    icon: python,
   },
   {
     name: 'Three JS',
