@@ -46,13 +46,12 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a junior front-end developer with some expertise in JavaScript,
-        TypeScript and CSS. I am also familiar with popular libraries and
+        I'm a junior front-end developer with some expertise in JavaScript,
+        TypeScript and CSS, also familiarized myself with popular libraries and
         frameworks such as React, Next.js and Tailwind.
         <br className='sm:block hidden' /> I'm eager to learn and gain relevant
-        experience with new technologies or just hone my skills with ones I've
-        used in the past, such as Vue, Nuxt, Node, Express or Python, just to
-        name a few.
+        experience with new technologies, such as Vue, Nuxt, Node, Express or
+        Python, just to name a few.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
