@@ -165,6 +165,32 @@ const experiences = [
 
 const projects = [
   {
+    name: 'Natter Ninja',
+    description:
+      'Natter Ninja is a real-time messaging app with sleek UI design. It includes message notifications, credential and social authentication, file and image upload, and client and server error handling.',
+    tags: [
+      {
+        name: 'next',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongo',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'prisma',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: cover,
+    github_link: 'https://github.com/SziNo/natter-ninja',
+    demo_link: 'https://natter-ninja.vercel.app/',
+  },
+  {
     name: 'Helpdesk App',
     description:
       'A user-friendly full-stack Helpdesk web application for managing Apple product support tickets. Features include user registration/login, ticket creation, note addition and ticket closure.',
@@ -281,28 +307,6 @@ const projects = [
     image: cover,
     github_link: 'https://github.com/SziNo/realEstateAppWithFirebase',
     demo_link: 'https://real-estate-app-with-firebase.vercel.app/',
-  },
-  {
-    name: 'HooBank',
-    description:
-      'By utilizing design tools such as Figma, the focus is on creating a seamless and intuitive user experience rather than on implementing complex functionalities.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'figma',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: cover,
-    github_link: 'https://github.com/SziNo/hoobank',
-    demo_link: 'https://hoobank-alpha.vercel.app/',
   },
 ]
 
