@@ -265,7 +265,7 @@ const projects = [
     demo_link: 'https://gpt-4-summarizer.vercel.app/',
   },
   {
-    name: 'Metaverse',
+    name: 'Metaversus',
     description:
       'This project, similar to my hoobank project, focuses on aesthetics rather than functionality, with an emphasis on a fancy and neat appearance.',
     tags: [
