@@ -243,6 +243,32 @@ const projects = [
     demo_link: 'https://shirtify.vercel.app/',
   },
   {
+    name: 'Promptopia',
+    description:
+      'This project covers the basics of Next.js 13, including its app folder structure, client and server components, file-based routing, special files, serverless route handlers, and SEO.',
+    tags: [
+      {
+        name: 'next',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongo',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'next-auth',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: cover,
+    github_link: 'https://github.com/SziNo/promptopia',
+    demo_link: 'https://promptopia-hazel.vercel.app/',
+  },
+  {
     name: 'Sumz',
     description:
       'This project utilizes a GPT-4 API to automatically generate concise and informative summaries of webpages from their URLs.',
@@ -263,6 +289,28 @@ const projects = [
     image: cover,
     github_link: 'https://github.com/SziNo/gpt-4-summarizer',
     demo_link: 'https://gpt-4-summarizer.vercel.app/',
+  },
+  {
+    name: 'Golds Gym',
+    description:
+      'Golds Gym offers you to choose exercise categories and muscle groups, browse over 1000 exercises with examples and related videos, and much more, it is the ultimate fitness companion.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'rapidapi',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mui',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: cover,
+    github_link: 'https://github.com/SziNo/fitnessApp',
+    demo_link: 'https://fitness-app-xkzx.vercel.app/',
   },
   {
     name: 'Metaversus',
@@ -307,6 +355,28 @@ const projects = [
     image: cover,
     github_link: 'https://github.com/SziNo/realEstateAppWithFirebase',
     demo_link: 'https://real-estate-app-with-firebase.vercel.app/',
+  },
+  {
+    name: 'Quiz App',
+    description:
+      'It is my very first Vue project and served as an educational tool to learn about the similarities and differences between React and Vue.',
+    tags: [
+      {
+        name: 'vue',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'composition-api',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: cover,
+    github_link: 'https://github.com/SziNo/vue-quiz',
+    demo_link: 'https://vue-quiz-sigma.vercel.app/',
   },
 ]
 
