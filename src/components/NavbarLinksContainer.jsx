@@ -12,8 +12,7 @@ const NavbarLinksContainer = ({ active, setActive }) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        containerRef.current &&
-        !containerRef.current.contains(event.target) &&
+        !containerRef.current?.contains(event.target) &&
         !event.target.closest('.hamburger-icon')
       ) {
         setToggle(false)
