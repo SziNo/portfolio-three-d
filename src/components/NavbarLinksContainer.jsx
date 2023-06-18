@@ -42,10 +42,10 @@ const NavbarLinksContainer = ({ active, setActive }) => {
         }`}
       >
         <ul
-          className={`list-none ${
+          className={`list-none flex ${
             isDesktop
-              ? 'hidden md:flex flex-row lg:gap-7 md:gap-3'
-              : 'flex justify-end items-start flex-1 flex-col gap-4'
+              ? 'flex-row gap-3 lg:gap-7'
+              : 'flex-col justify-end items-start flex-1 gap-4'
           }`}
         >
           {navLinks.map((nav) => (
