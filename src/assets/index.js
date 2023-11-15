@@ -25,6 +25,7 @@ import python from './tech/python.png'
 import owl from './company/owl.png'
 import kulkertech from './company/kulkertech.png'
 import dh from './company/dh.jpg'
+import fi from './company/fi.png'
 
 import cover from './cover.jpg'
 
@@ -54,5 +55,6 @@ export {
   dh,
   kulkertech,
   owl,
+  fi,
   cover,
 }

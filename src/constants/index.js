@@ -17,6 +17,7 @@ import {
   kulkertech,
   owl,
   dh,
+  fi,
   cover,
   threejs,
   python,
@@ -153,12 +154,24 @@ const experiences = [
     company_name: 'Docler Holding (ByBorg), Livejasmin Team',
     icon: dh,
     iconBg: '#E6DEDD',
-    date: 'Nov 2022 - Apr 2023',
+    date: 'Nov 2022 - May 2023',
     points: [
       'Developing and debugging mainly using React, Backbone.js, SASS and other related technologies.',
       'Collaborating with cross-functional teams including Designers, Web Content Translators, GA Specialists and Testers.',
       'Implementing responsive design and ensuring cross-browser compatibility, usually using the Xcode simulator for iOS testing.',
       'Participating in code reviews and getting acquainted with JIRA, BitBucket, Confluence.',
+    ],
+  },
+  {
+    title: 'Freelancer',
+    company_name: 'Fiverr',
+    icon: fi,
+    iconBg: '#E6DEDD',
+    date: 'May 2023 - recent',
+    points: [
+      'Collaborated with a senior freelancer friend on his projects, where I helped with some front-end tasks using React, TailwindCSS, and RTK, such as creating components, styling pages, and adding interactivity',
+      'Continued to learn and improve my skills in Node/Express and MERN stack, as well as exploring new frameworks and libraries, such as Next14, TailwindCSS, RTK queries, to be as versatile as possible for my level.',
+      'Planning to find some open source projects on GitHub and start contributing to them, such as fixing issues, adding features, and improving code quality, using technologies such as React, Redux, Node/Express.',
     ],
   },
 ]
@@ -217,30 +230,22 @@ const projects = [
     demo_link: 'https://helpdesk-mern.onrender.com/',
   },
   {
-    name: 'Shirtify',
+    name: 'Hoobank',
     description:
-      'Shirtify is a t-shirt designer app that lets you create custom designs with ease. With its 3D implementation using React and Three.js, you can upload images, choose colors and apply your design as a logo or to the entire shirt.',
+      'A modern banking website built with ReactJS and Tailwind. This project focuses on Tailwind and how to build a website using Figma rather than functionalities.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'three',
-        color: 'green-text-gradient',
-      },
-      {
         name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'framer-motion',
-        color: 'orange-text-gradient',
+        color: 'green-text-gradient',
       },
     ],
     image: cover,
-    github_link: 'https://github.com/SziNo/Shirtify/tree/master/client',
-    demo_link: 'https://shirtify.vercel.app/',
+    github_link: 'https://github.com/SziNo/hoobank',
+    demo_link: 'https://hoobank-alpha.vercel.app/',
   },
   {
     name: 'Promptopia',
@@ -289,28 +294,6 @@ const projects = [
     image: cover,
     github_link: 'https://github.com/SziNo/gpt-4-summarizer',
     demo_link: 'https://gpt-4-summarizer.vercel.app/',
-  },
-  {
-    name: 'Golds Gym',
-    description:
-      'Golds Gym offers you to choose exercise categories and muscle groups, browse over 1000 exercises with examples and related videos, and much more, it is the ultimate fitness companion.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'rapidapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mui',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: cover,
-    github_link: 'https://github.com/SziNo/fitnessApp',
-    demo_link: 'https://fitness-app-xkzx.vercel.app/',
   },
   {
     name: 'Metaversus',
@@ -377,6 +360,32 @@ const projects = [
     image: cover,
     github_link: 'https://github.com/SziNo/vue-quiz',
     demo_link: 'https://vue-quiz-sigma.vercel.app/',
+  },
+  {
+    name: 'Star Wars',
+    description:
+      'This was the final project of a React course, not too complicated, great opportunity to practise RTK Query, Tailwind and Framer Motion, tho.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'rtk-query',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'framer-motion',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: cover,
+    github_link: 'https://github.com/SziNo/star-wars-final-project',
+    demo_link: 'https://github.com/SziNo/star-wars-final-project',
   },
 ]
 
